@@ -14,7 +14,7 @@ function Contact() {
     <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
             <p className="text-4xl font-bold inline border-b-4 border-thBlue">Contact</p>
-            <p className="py-6 text-xl">Submit the form below or Call <span className='text-thBlue text-2xl'>1-800-123-1234</span> to place an order. All Night Vision and Thermal devices are built to order.</p>
+            <p className="py-6 text-xl">Need Help? Submit the form below or call <span className='text-thBlue text-2xl'>1-800-999-1989</span></p>
         </div>
 
         <div className="flex justify-center items-center">
