@@ -1,8 +1,8 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, /*useContext*/ } from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { BsFillCartFill } from 'react-icons/bs';
-import  CartContext  from '../Context/CartContext';
+//import  CartContext  from '../Context/CartContext';
 
 
 
@@ -12,7 +12,7 @@ function NavBar() {
 
  const [nav, setNav] = useState(false);
  
- const { items } = useContext(CartContext);
+ //const { } = useContext(CartContext);
 
 
 
@@ -33,7 +33,7 @@ function NavBar() {
               <Link to ='/contactpage'><li className='px-4 hover:text-thBlue duration-300 hover:scale-105'>Contact</li></Link>
           </ul>
           <Link to='/cart'><BsFillCartFill className='mx-2 text-thBlue hover:scale-150 duration-300' size={30} /></Link>
-          <span>{items.length}</span>
+          <span>0</span>
         </div>
 
          <div onClick={() => setNav(!nav)} className='block md:hidden cursor-pointer'>

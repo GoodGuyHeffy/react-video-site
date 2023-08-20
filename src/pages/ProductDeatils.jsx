@@ -7,7 +7,7 @@ import CartContext from '../Context/CartContext';
 
 function ProductDeatils() {
 
-  const {addToCart} = useContext(CartContext);
+  const { addToCart } = useContext(CartContext);
   
   const params = useParams();
   const [item, setItem] = useState(null);
