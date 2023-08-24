@@ -53,7 +53,6 @@ const addToCart = (item) => {
  
 
 
-
     return (
         <CartContext.Provider value={{cartItems, addToCart, removeFromCart, clearCart, getCartTotal}}>
             {children}

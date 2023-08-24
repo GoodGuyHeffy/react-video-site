@@ -7,7 +7,7 @@ const DATA = [
     {
         id: 1,
         productName: 'AB Night Vision RNVG',
-        price: '$6,799 - $8,999',
+        price: '$8,999.98',
         productImage: 'https://steeleindustries.com/wp-content/uploads/2023/05/RNVG-2.jpg',
         category: 'nvg',
         info: 'The AB Night Vision RNVG is one of the most durable dual tube night vision system on the market. This unit is crafted out of 7075 aluminum making it very strong, and runs off a single CR123 battery up to 16 hours of use.  This unit comes with our 10 year warranty, and our limited lifetime service.',
@@ -16,7 +16,7 @@ const DATA = [
     {
         id: 2,
         productName: 'L3 PEQ-15 IR laser',
-        price: 'Out of Stock',
+        price: '$2,999.99',
         productImage: 'https://steeleindustries.com/wp-content/uploads/2023/04/PEQ-15-1.jpg',
         category: 'laser',
         info: 'The L3Harris ATPIAL AN/PEQ-15 is a small, lightweight, easy-to-use aiming system with integrated infrared and visible aiming lasers and an infrared illuminator. ATPIAL featuers a Rail-Grabber interface and is ruggedized to military environmental standards for use on small arms and crew-served weapons.',
@@ -178,7 +178,7 @@ const DATA = [
     {
         id: 20,
         productName: 'L3 Harris NGAL A1',
-        price: 'Out of Stock',
+        price: '$3,499.98',
         productImage: 'https://steeleindustries.com/wp-content/uploads/2023/04/NGAL-1-600x600.jpg',
         category: 'laser',
         info: 'The L3Harris NGAL is a rugged, ultra-compact and lightweight system designed to be compatible with all generations of night vision devices. NGAL uses an advanced illuminator design to achieve a more uniform Near Infrared illuminator beam for increased Situation Awareness. High-efficiency electronics support increased system performance at reduced Size, Weight and Power.',
