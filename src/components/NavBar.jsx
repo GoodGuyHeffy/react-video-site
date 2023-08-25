@@ -12,9 +12,9 @@ function NavBar() {
 
  const [nav, setNav] = useState(false);
  
- const { cartItem } = useContext(CartContext);
+ const { cartItems } = useContext(CartContext);
 
-console.log(cartItem);
+
 
   return (
     <>
@@ -33,7 +33,7 @@ console.log(cartItem);
               <Link to ='/contactpage'><li className='px-4 hover:text-thBlue duration-300 hover:scale-105'>Contact</li></Link>
           </ul>
           <Link to='/cart'><BsFillCartFill className='mx-2 text-thBlue hover:scale-150 duration-300' size={30} /></Link>
-          <span>{0}</span>
+          <span>{cartItems.length}</span>
         </div>
 
          <div onClick={() => setNav(!nav)} className='block md:hidden cursor-pointer'>
@@ -48,7 +48,7 @@ console.log(cartItem);
      justify-center text-center text-2xl duration-500 ${nav ? "top-24 rounded-b-2xl opactiy-95" : "top-[-100%]"}`}>
       <ul className=''>
                <Link to ='/'><li className='font-bold py-1'>Home</li></Link>
-               <Link to ='/'><li className='font-bold py-1'>Cart</li></Link>
+               <Link to ='/cart'><li className='font-bold py-1'>Cart</li></Link>
               <Link to ='/productpage'><li className='font-bold py-1'>Products</li></Link>
               <Link to ='/questionpage'><li className='font-bold py-1'>Questions</li></Link>
               <Link to ='/contactpage'><li className='font-bold py-1'>Contact</li></Link>

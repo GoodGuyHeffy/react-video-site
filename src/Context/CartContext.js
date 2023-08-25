@@ -51,7 +51,7 @@ const addToCart = (item) => {
 
  
  
-
+  console.log(cartItems);
 
     return (
         <CartContext.Provider value={{cartItems, addToCart, removeFromCart, clearCart, getCartTotal}}>

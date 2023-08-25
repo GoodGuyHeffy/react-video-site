@@ -52,7 +52,7 @@ function Products() {
                 <div className='flex flex-col justify-between px-2 py-4'>
                     <p className='font-bold pb-6'>{item.productName}</p>
                     <div className='flex flex-row justify-between'>
-                    <p className='text-thBlue font-bold absolute left-0 bottom-0 p-2 pt-2'>{item.price}</p>
+                    <p className='text-thBlue font-bold absolute left-0 bottom-0 p-2 pt-2'>${item.price}</p>
                     
                     </div>
                 </div>
