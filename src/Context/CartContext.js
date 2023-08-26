@@ -1,5 +1,5 @@
-import { createContext, useState, useEffect } from 'react';
-import DATA from '../data';
+import { createContext, useState } from 'react';
+
 
 
 export const CartContext = createContext();
@@ -51,7 +51,7 @@ const addToCart = (item) => {
 
  
  
-  console.log(cartItems);
+  
 
     return (
         <CartContext.Provider value={{cartItems, addToCart, removeFromCart, clearCart, getCartTotal}}>

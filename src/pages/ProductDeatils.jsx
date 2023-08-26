@@ -3,11 +3,13 @@ import NavBar from '../components/NavBar';
 import { useParams } from 'react-router-dom';
 import  DATA  from '../data';
 import { CartContext } from '../Context/CartContext';
+import { BsArrowLeftSquareFill } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 function ProductDeatils() {
 
   
-  const { addToCart, removeFromCart} = useContext(CartContext);
+  const { addToCart } = useContext(CartContext);
   const params = useParams();
 
   const [item, setItem] = useState(null);
@@ -44,6 +46,7 @@ function ProductDeatils() {
       <img alt={item.productName} className="lg:w-1/2 w-full object-cover object-center rounded-xl" src={item.productImage} />
       <div className='lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0'>
         <h1 className='text-thBlue text-3xl title-font font-medium mb-1'>{item.productName}</h1>
+        <Link to="/productpage"><BsArrowLeftSquareFill className='text-thBlue bg-black ml-4 hover:scale-105 duration-300' title="back to products" size={30}/></Link>
         <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5"></div>
          <br />
         <p className='text-white'>{item.info}</p>
@@ -52,7 +55,9 @@ function ProductDeatils() {
         <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5"></div>
         <div className="flex">
           <span className="title-font font-medium text-2xl text-thBlue">${item.price}</span>
-          <button onClick={() => addToCart(item)}  className="flex ml-auto text-black bg-thBlue font-bold  py-2 px-6 focus:outline-none rounded-lg hover:scale-105 duration-300">Add To Cart</button>
+          
+            
+            <button onClick={() => addToCart(item)}  className="flex ml-auto text-black bg-thBlue font-bold  py-2 px-6 focus:outline-none rounded-lg hover:scale-105 duration-300">Add To Cart</button>
           
         </div>
       </div>

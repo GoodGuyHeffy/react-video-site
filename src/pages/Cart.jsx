@@ -1,12 +1,13 @@
 import React, { useContext }from 'react';
 import NavBar from '../components/NavBar';
+import { Link } from 'react-router-dom';
 
 import { CartContext } from '../Context/CartContext';
 
 function Cart() {
 
 
-  const { cartItems, getCartTotal, removeFromCart, addToCart} = useContext(CartContext);
+  const { cartItems, getCartTotal, removeFromCart} = useContext(CartContext);
 
 
 console.log(cartItems);
@@ -30,7 +31,7 @@ console.log(cartItems);
                    
                     
                    
-                      <button onClick={() => removeFromCart(item)} className='bg-thBlue text-black mx-2 px-2 my-2 rounded-xl hover:scale-105 duration-300'>Remove from Cart</button>
+                      <button onClick={() => removeFromCart(item)} className='bg-thBlue text-black mx-2 p-2 my-2 rounded-xl hover:scale-105 duration-300'>Remove from Cart</button>
                       
                 </div>
                 
@@ -39,7 +40,7 @@ console.log(cartItems);
         ))}
         <div className='flex justify-center items-center font-bold text-thBlue py-12 mx-6 '>
             <p className='px-8 text-xl md:text-2xl md:mx-12'> CART TOTAL: <span className='text-white'>${getCartTotal()}</span></p>
-            <button className='px-4 py-2 bg-thBlue text-black rounded-xl hover:scale-105 duration-300 md:mx-12'>Check Out</button>
+            <Link to='/rickroll'><button className='px-4 py-2 bg-thBlue text-black rounded-xl hover:scale-105 duration-300 md:mx-12'>Check Out</button></Link>
           </div>
           </div>
           

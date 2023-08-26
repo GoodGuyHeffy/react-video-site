@@ -3,7 +3,7 @@ import {FaBars, FaTimes} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { BsFillCartFill } from 'react-icons/bs';
 import  CartContext  from '../Context/CartContext';
-import DATA from '../data';
+
 
 
 

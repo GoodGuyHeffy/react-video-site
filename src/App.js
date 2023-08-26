@@ -8,6 +8,7 @@ import ProductDeatils from './pages/ProductDeatils';
 import ProductPage from './pages/ProductPage';
 import Cart from './pages/Cart';
 import { CartProvider } from './Context/CartContext';
+import RickRoll from './pages/RickRoll';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
          <Route path='/customerpage' element={<CustomerPage />} />
          <Route path='/contactpage' element={<Contactpage />} />
          <Route path='/cart' element={<Cart />} />
+         <Route path='/rickroll' element={<RickRoll />} />
          <Route path='/productpage/:id' element={<ProductDeatils />} />
       </Routes>
       </CartProvider>
