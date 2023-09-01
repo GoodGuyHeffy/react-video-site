@@ -23,7 +23,7 @@ function NavBar() {
         <div>
           <h1 className='text-thBlue tracking-widest text-3xl'>Twilight Inc.</h1>
         </div>
-
+                    {/* Large(er) screen  NavBar Section */}
         <div className='hidden lg:flex items-center'>
 
           <ul className='flex text-xl'>
@@ -43,6 +43,7 @@ function NavBar() {
       </div>
     </div>
 
+                        {/* smol boi mobile Nav */}
 
     <div className={`fixed w-full bg-black text-white z-10 left-0 h-fit py-12 lg:hidden flex
      justify-center text-center text-2xl duration-500 ${nav ? "top-24 rounded-b-2xl opactiy-95" : "top-[-100%]"}`}>

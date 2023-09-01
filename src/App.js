@@ -1,6 +1,5 @@
 import React from 'react';
 import QuestionPage from './pages/QuestionPage';
-import CustomerPage from './pages/CustomerPage';
 import Contactpage from './pages/Contactpage';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
@@ -10,11 +9,13 @@ import Cart from './pages/Cart';
 import { CartProvider } from './Context/CartContext';
 import RickRoll from './pages/RickRoll';
 
+
+
+
+
 function App() {
 
   
-
-
   return (
     <div>
       <CartProvider>
@@ -22,7 +23,6 @@ function App() {
          <Route path='/' element={<Home />} />
          <Route path='/productpage' element={<ProductPage />} />
          <Route path='/questionpage' element={<QuestionPage />} />
-         <Route path='/customerpage' element={<CustomerPage />} />
          <Route path='/contactpage' element={<Contactpage />} />
          <Route path='/cart' element={<Cart />} />
          <Route path='/rickroll' element={<RickRoll />} />

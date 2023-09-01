@@ -16,7 +16,7 @@ function Contact() {
             <p className="text-4xl font-bold inline border-b-4 border-thBlue">Contact</p>
             <p className="py-6 text-xl">Need Help? Submit the form below or call <span className='text-thBlue text-2xl'>1-800-999-1989</span></p>
         </div>
-
+                           {/*  CONTACT FORM   */}
         <div className="flex justify-center items-center">
             <form action="https://getform.io/f/7cde5dcb-a145-4c46-9b91-37fa019d2193" 
             method="POST" className="flex flex-col w-full md:w-1/2">

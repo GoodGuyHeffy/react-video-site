@@ -9,7 +9,7 @@ function Products() {
  const [kind, setKind] = useState(DATA);
 
  const filterType = (category) => {
-  setKind(
+  setKind(                                 /* Filtering item type for product page */
     DATA.filter((item) => {
       return item.category === category;
     })
@@ -32,17 +32,17 @@ function Products() {
         <div>
           <p className='pl-4 text-xl font-bold text-thBlue py-4'>Filter Type</p>
           <div className='flex flex-wrap'>
-            <button onClick={()=> setKind(DATA)} className='px-4 mx-2 my-4 hover:uppercase hover:scale-105 rounded-xl bg-thBlue text-black duration-300'>All</button>
-            <button onClick={() => filterType('nvg')} className='px-4 mx-2 my-4 hover:uppercase hover:scale-105 rounded-xl bg-thBlue text-black duration-300'>Night Vision</button>
-            <button onClick={() => filterType('thermal')} className='px-4 mx-2 my-4 hover:uppercase hover:scale-105 rounded-xl bg-thBlue text-black duration-300'>Thermals</button>
-            <button onClick={() => filterType('laser')} className='px-4 mx-2 my-4 hover:uppercase hover:scale-105 rounded-xl bg-thBlue text-black duration-300'>Lasers</button>
-            <button onClick={() => filterType('helmet')} className='px-4 mx-2 my-4 hover:uppercase hover:scale-105 rounded-xl bg-thBlue text-black duration-300'>Brain Buckets</button>
-            <button onClick={() => filterType('accessories')} className='px-4 mx-2 my-4 hover:uppercase hover:scale-105 rounded-xl bg-thBlue text-black duration-300'>Accessories</button>
+            <button onClick={()=> setKind(DATA)} className='px-4 mx-2 my-4 md:hover:uppercase hover:scale-105 rounded-xl bg-thBlue text-black duration-300'>All</button>
+            <button onClick={() => filterType('nvg')} className='px-4 mx-2 my-4 md:hover:uppercase hover:scale-105 rounded-xl bg-thBlue text-black duration-300'>Night Vision</button>
+            <button onClick={() => filterType('thermal')} className='px-4 mx-2 my-4 md:hover:uppercase hover:scale-105 rounded-xl bg-thBlue text-black duration-300'>Thermals</button>
+            <button onClick={() => filterType('laser')} className='px-4 mx-2 my-4 md:hover:uppercase hover:scale-105 rounded-xl bg-thBlue text-black duration-300'>Lasers</button>
+            <button onClick={() => filterType('helmet')} className='px-4 mx-2 my-4 md:hover:uppercase hover:scale-105 rounded-xl bg-thBlue text-black duration-300'>Brain Buckets</button>
+            <button onClick={() => filterType('accessories')} className='px-4 mx-2 my-4 md:hover:uppercase hover:scale-105 rounded-xl bg-thBlue text-black duration-300'>Accessories</button>
           </div>
         </div>
         </div>
 
-        <div className='w-full text-white md:h-screen py-12 pt-24  px-10'>
+        <div className='w-full text-white md:h-screen py-12 pt-24'>
     <div className='max-w-screen p-4 mx-auto flex flex-col justify-center w-full'>
       <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4  sm:px-0 pb-8 '>
       {kind.map((item, index)=> (
